@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Contact List Manager</h1>
+    <p class="lead">Manage your contacts efficiently with our simple and intuitive interface.</p>
+    <hr class="my-4">
+    <p>Get started by adding a new contact or viewing your existing contacts.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('add_contact') }}" role="button">Add Contact</a>
+    <a class="btn btn-secondary btn-lg" href="{{ url_for('list_contacts') }}" role="button">View Contacts</a>
+</div>
+{% endblock %} 
